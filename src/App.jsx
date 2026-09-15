@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 
 
 function App() {
-  const [language, setlanguage] = useState("");
+  const [language, setlanguage] = useState("english");
     const navigate = useNavigate();
   let content;
   if(language==="english"){
@@ -24,17 +24,24 @@ function App() {
   return (
     <>
       <h2>Hi Aki</h2>
-      {content}
-      <select value={language} onChange={(e) => setlanguage(e.target.value)}>
+       <select value={language} onChange={(e) => setlanguage(e.target.value)}>
         <option value="" hidden disabled>Choose </option>
         <option value="english">English</option>
         <option value="tagalog">Filipino</option>
       </select>
+      <div className="main-content">
+        {content}
+      </div>
+      
+     
 
-      <button onClick={() => navigate("/happy")}>Are you Happy?</button>
-      <button onClick={() => navigate("/sad")}>U Sad?</button>
-      <button onClick={() => navigate("/angry")}>Open when u Angry</button>
-      <button onClick={() => navigate("/miss")}>Open When you miss me</button>
+       <div className="button">
+        <button className="btn-happy" onClick={() => navigate("/happy")}>Are you Happy?</button>
+        <button className="btn-sad" onClick={() => navigate("/sad")}>U Sad?</button>
+        <button className="btn-angry" onClick={() => navigate("/angry")}>Open when u Angry</button>
+        <button className="btn-miss" onClick={() => navigate("/miss")}>Open When you miss me</button>
+      </div>
+
     </>
   )
 }
