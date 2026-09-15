@@ -7,7 +7,7 @@ import AppRouter from './navigate.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/aki">
       <AppRouter />
     </BrowserRouter>
   </StrictMode>,
