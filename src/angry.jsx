@@ -3,8 +3,9 @@ function Angry(){
      const navigate = useNavigate();
     return(
         <>
-        <h2>DOn't be mad na</h2>
-        <button onClick={() => navigate("/")}>Okay thanks where is back?</button>
+        <h2>.....</h2>
+        <h3>Please no angry na po coz i is Scared</h3>
+        <button onClick={() => navigate("/")}>Go back</button>
         </>
     )
 }

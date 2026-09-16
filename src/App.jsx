@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 import English from './english'
 import Tagalog from './tagalog'
@@ -28,7 +25,7 @@ function App() {
         <option value="" hidden disabled>Choose </option>
         <option value="english">English</option>
         <option value="tagalog">Filipino</option>
-      </select>
+      </select> 
       <div className="main-content">
         {content}
       </div>
